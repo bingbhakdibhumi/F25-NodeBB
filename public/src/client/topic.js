@@ -92,7 +92,6 @@ define('forum/topic', [
 		});
 	}
 
-
 	function handleTopicSearch() {
 		require(['mousetrap'], (mousetrap) => {
 			if (config.topicSearchEnabled) {
