@@ -82,11 +82,7 @@
 
 		<div class="content text-break" component="post/content" itemprop="text">
 			{posts.content}
-<<<<<<< HEAD:vendor/nodebb-theme-harmony-2.1.15/templates/partials/topic/post.tpl
-            {{{if !posts.isEnglish }}}
-=======
 			{{{if !posts.isEnglish }}}
->>>>>>> dd63be0ca89fb2783b099e7fdd02410b73263e0d:vendor/nodebb-theme-harmony-2.1.23/templates/partials/topic/post.tpl
 		        <div class="sensitive-content-message">
 		        <a class="btn btn-sm btn-primary view-translated-btn">Click here to view the translated message.</a>
 		        </div>
