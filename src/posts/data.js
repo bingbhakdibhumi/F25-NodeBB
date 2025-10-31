@@ -72,5 +72,6 @@ function modifyPost(post, fields) {
 		}
 		// Mark post as "English" if decided by translator service or if it has no info
 		post.isEnglish = post.isEnglish == 'true' || post.isEnglish === undefined;
+		post.translatedContent = post.translatedContent ?? post.content;
 	}
 }
