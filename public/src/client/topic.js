@@ -71,14 +71,14 @@ define('forum/topic', [
 		handleThumbs();
 
 		$(window).on('scroll', utils.debounce(updateTopicTitle, 250));
-        configurePostToggle();
+		configurePostToggle();
 
 		handleTopicSearch();
 
 		hooks.fire('action:topic.loaded', ajaxify.data);
 	};
 
-    function configurePostToggle() {
+	function configurePostToggle() {
 		$('.topic').on('click', '.view-translated-btn', function () {
 			// Toggle the visibility of the next .translated-content div
 			$(this).closest('.sensitive-content-message').next('.translated-content').toggle();
